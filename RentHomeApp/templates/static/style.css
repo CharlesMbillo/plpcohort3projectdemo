@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+/* Global Styles */
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #7221a1;
+
+}
+
+h4 {
+    font-size: 20px;
+    /* line-height: 64px; */
+    color: #222;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p{
+        color: rgb(154, 30, 165);
+        font-weight: bold;
+    /* font-size: 16px;
+     color: #5b4659;
+    margin: 15px 0 20px 0;  */
+}
+.section-house{
+    padding: 40px 80px;
+}
+.section-margin{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer; 
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+/* Header Starts here */
+#header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: -10px 60px;
+        background: white;
+       /* background-image: url(img/Sampleimgs/black\ banner.jpg); */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0; 
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 14px;
+    /* position: relative; */
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: #7221a1;
+    /* transition: 0.3 ease; */
+}
+#navbar li a:hover,
+#navbar li a.active {
+     color: #201dd6;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 17px;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.welcome-text {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(25, 14, 173);
+    animation: moveLeft 10s linear infinite;
+    padding: 20px;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+  50% {
+        transform: translateX(-100%);
+    }
+    /* 100% {
+        transform: translateX(100%);
+    } */
+}
+
+/* Home page starts here */
+#room{
+    background-image: url(img/Sampleimgs/room.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 34% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#room h2{
+    padding-bottom: 15px;
+    color: #7221a1;
+}
+
+#room h1{
+    color: #7221a1;
+}
+#room p{
+    color: rgb(154, 30, 165);
+    font-weight: bold;
+}
+#house{
+    text-align: center;
+
+}
+#house h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #7221a1;
+}
+
+#house .house-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#house .hou{
+    width: 49%;
+    min-width: 250px;
+    padding: 10px 22px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#house .hou img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#house .hou:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#house .hou .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+
+
+#house .hou .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #201dd6;
+
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(img/house/banner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0%;
+}
+
+#banner h4{
+    color: #201dd6;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: #000;
+    /* color: red; */
+    font-size: 30px;
+    padding:10px 0;
+}
+
+#banner button:hover{
+    background-color: #201dd6;
+    color: #fff;
+}
+
+ #testimonials h2{
+    text-align: center;
+    padding: 40px 22px;
+    }
+ #testimonials{
+background-color: whitesmoke;
+height: 70vh;
+
+}
+.testimonial-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        
+      }
+      
+  .testimonial h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: #201dd6; 
+    padding-bottom: 20px; 
+          }
+
+      .testimonial {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 60px; /* Adjust spacing between testimonials */
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+        animation: marquee 20s linear infinite;
+       
+      }
+      
+      .testimonial-text {
+        font-size: 14px;
+        text-align: center;
+      
+      }
+      
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        10% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        40% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        50% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        60% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        70% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+      }
+      
+#notification{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/Sampleimgs/not\ 2.jpg");
+
+}
+
+#notification h4{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+#notification p{
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: wheat;
+}
+
+#notification p span{
+    color: red;
+}
+
+#notification .form{
+    display: flex;
+    width: 40%;
+}
+
+#notification input{
+    height: 3.125rem;
+    padding: 0 1.5em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#notification button{
+    background-color:red;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 8px; /* Add a top margin */
+    margin-bottom: 16px;/* Bottom margin */
+}
+  
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+background-color: rgb(235, 227, 235)
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 6px 0;
+    color: #7221a1;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom:10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #201dd6;;
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install .row img:hover{
+    cursor: pointer;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+ /* About Page begins here */
+ #page-header{
+    /* background-image: url("img/Sampleimgs/black\ banner.jpg"); */
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 14px;
+}
+#History{
+    height: 50vh;
+    background-image: url("img/Sampleimgs/noti.jpg");
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* align-items: center;  */
+}
+#History, h2{
+    color:whitesmoke;
+}
+#History, p{
+    color: white;
+}
+#page-header h2,
+#page-header p{
+    color: #201dd6;
+}
+
+#page-header.about-header{
+background-color:none;
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-app h1{
+    text-align: center;
+}
+
+
+
+/* CONTACT PAGE STARTS HERE */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 50%; 
+    padding: 12px; 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 8px; /* Add a top margin */
+    margin-bottom: 16px;/* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally)  */
+   
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color:  #088178;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #201dd6;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(235, 227, 235);
+  }
+
+  /* Responsiveness for other Screens using Media Query Starts Here */
+
+@media only screen and (max-width:768px){
+    /* Home Page Mobile */
+    /* .section-house{
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 30px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0; */
+        /* right: -300px; */
+        #notification {
+           padding: 40px 20px;
+        }
+        #notification .form {
+            width: 100%;
+            padding-top: 20px;
+        }
+        #testimonials {
+    
+            height: 120vh;
+        }
+        footer {
+            
+  width: 100%;
+        }
+        }
+
+ 
+

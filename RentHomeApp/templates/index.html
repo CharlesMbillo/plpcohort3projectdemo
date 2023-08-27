@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   <section id="room">
+    <h2>Welcome to</h2>
+    <h1>House Search Made Easy</h1>
+    <p>We connect possible tenants and house Agents.</p>
+
+   </section>
+   <section id="house" class="section-house">
+    <h2>ROOMS AVAILABLE</h2>
+    <p>Here is a sample of rooms available,contact us and get one.</p>
+
+<div class="house-container">
+    <div class="hou">
+        <img src="img/house/h2.jpeg" alt="">
+        <div class="des">
+        <h4>KSh.4500 {{RentHome.Image1}} </h4>
+            <span>Single Room</span>
+
+          <div></div>
+
+           <div class="location">
+            <h4> <i class="fa-solid fa-location-dot"></i></i>Kitengela</h4>
+           </div>
+        </div>
+
+    </div>
+    <div class="hou">
+        <img src="img/house/h3.webp" alt="">
+        <div class="des">
+        <h4>KSh.2000</h4>
+            <span>Single Room</span>
+           <div class="location">
+            <h4> <i class="fa-solid fa-location-dot"></i></i>Athi River</h4>
+
+           </div>
+
+           
+        </div>
+
+    </div>
+    <div class="hou">
+        <img src="img/house/h4.jpg" alt="">
+        <div class="des">
+        <h4>KSh.5000</h4>
+            <span>Single Room</span>
+           <div class="location">
+            <h4> <i class="fa-solid fa-location-dot"></i></i>Strathmore</h4>
+
+           </div>
+
+           
+        </div>
+
+    </div>
+    <div class="hou">
+        <img src="img/house/h1.jpg" alt="">
+        <div class="des">
+        <h4>KSh.4500</h4>
+            <span>Single Room</span>
+           <div class="location">
+            <h4> <i class="fa-solid fa-location-dot"></i></i>Thika</h4>
+
+           </div> 
+        </div>
+    </div>
+</div>
+   </section>
+   <section id="banner" class="section-margin">
+    <h4>Everyone Needs A Room</h4>
+        <h2>We connect you with the best House Agents.</h2>
+        <button class="normal">GET A ROOM</button>
+   </section>
+   <section id="testimonials">
+<h2>8, 921+ Happy Tenants</h2>
+   <!-- </section> -->
+
+  <!-- <section class="testimonials"> -->
+    <div class="testimonial">
+        <!-- <img src="testimonial2.jpg" alt="Testimonial 1"> -->
+        <h5>"I found the perfect room to rent through this website! The process was seamless, and the room exceeded my expectations. Thank you!"</h5>
+        <h6>- Alex Muriithi</h6>
+      </div>
+      <div class="testimonial">
+        <!-- <img src="testimonial2.jpg" alt="Testimonial 2"> -->
+        <h5>"The room I found here is perfect! Accurate listing description and helpful photos. User-friendly interface and great support!"</h5>
+        <h6>- Vincent Maritim</h6>
+      </div>
+      <div class="testimonial">
+        <!-- <img src="testimonial2.jpg" alt="Testimonial 2"> -->
+        <h5>"Finding a room here was a game-changer. The search filters helped me find the perfect room within my budget. Grateful for this platform!"</h5>
+        <h6>- Julius </h6>
+      </div>
+      
+      <div class="testimonial">
+        <!-- <img src="ff" alt="Testimonial 3"> -->
+        <h5>"I'm extremely satisfied with this website. The room I rented is even better than I imagined. Highly recommended for finding a rental room!"</h5>
+        <h6>-Shizney James</h6>
+      </div>
+  
+      <!-- Repeat the structure for the remaining testimonials -->
+    </marquee>
+  </section>
+  
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxx -->
+  
+<section id="notification" class="section-house">
+    <div class="notificationtext">
+        <h4>Be the first to get updated</h4>
+        <p>Receive notification of new rooms <span> available</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Enter your email address...">
+        <button class="normal">Subscribe</button>
+    </div>
+</section>
+
+  {% endblock %}
+
+
+
+

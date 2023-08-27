@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+        <section class="container forms">
+            <div class="form login" id="main">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input id="email" type="email" placeholder="Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="password" type="password" placeholder="Password" class="password" required>
+                            <i class='fa fa-eye-slash eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button id="submit">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a id="sign-up" class="link signup-link"  href="register.html">Signup</a></span>
+                        
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a id="signInWithGoogle" class="field google">
+                        <img src="./img/Google-Icon-PNG-768x768.jpg" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup" id="create-acct">
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input id="email-signup" type="email" placeholder="Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="confirm-email-signup" type="email" placeholder="Confirm Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="password-signup" type="password" placeholder="Create password" class="password" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input id="confirm-password-signup" type="password" placeholder="Confirm password" class="password" required>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button id="create-acct-btn">Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" id="return-btn" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+                <div class="media-options">
+                    <a id="signInWithGoogle" class="field google">
+                        <img src="./img/Google-Icon-PNG-768x768.jpg" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+{%endblock%}
